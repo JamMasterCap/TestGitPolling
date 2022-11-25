@@ -32,3 +32,8 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ```{python}
 print([(i, i * i) for i in range(10)])
 ```
+
+## Python integration 2
+```{python}
+print([(i, i * i) for i in range(100)])
+```
