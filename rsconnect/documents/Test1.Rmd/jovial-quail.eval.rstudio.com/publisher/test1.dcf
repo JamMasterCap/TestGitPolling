@@ -1,0 +1,13 @@
+name: test1
+title: Test1
+username: publisher
+account: publisher
+server: jovial-quail.eval.rstudio.com
+hostUrl: https://jovial-quail.eval.rstudio.com/rsconnect/__api__
+appId: 16
+bundleId: 29
+url: https://jovial-quail.eval.rstudio.com/rsconnect/content/45647aa7-1487-46fd-a785-6394f413d405/
+when: 1669363454.36352
+lastSyncTime: 1669363454.36354
+asMultiple: FALSE
+asStatic: FALSE

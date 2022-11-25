@@ -1,0 +1,30 @@
+{
+  "R": {
+    "Version": "4.1.2",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://jovial-quail.eval.rstudio.com/packages/cran/latest"
+      },
+      {
+        "Name": "Internal",
+        "URL": "https://jovial-quail.eval.rstudio.com/packages/internal/latest"
+      }
+    ]
+  },
+  "Python": {
+    "Version": "3.8.9",
+    "Type": "virtualenv",
+    "Name": "/home/rstudio/renv_test/renv/python/virtualenvs/renv-python-3.8"
+  },
+  "Packages": {
+    "renv": {
+      "Package": "renv",
+      "Version": "0.16.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "c9e8442ab69bc21c9697ecf856c1e6c7",
+      "Requirements": []
+    }
+  }
+}
