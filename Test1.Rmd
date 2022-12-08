@@ -37,3 +37,7 @@ print([(i, i * i) for i in range(10)])
 ```{python}
 print([(i, i * i) for i in range(100)])
 ```
+## Python integration 3
+```{python}
+print([(i, 2 * i + i) for i in range(30)])
+```
