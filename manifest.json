@@ -1,7 +1,7 @@
 {
   "version": 1,
   "locale": "C",
-  "platform": "4.1.2",
+  "platform": "4.2.1",
   "metadata": {
     "appmode": "rmd-static",
     "primary_rmd": "Test1.Rmd",
@@ -10,7 +10,7 @@
     "has_parameters": false
   },
   "python": {
-    "version": "3.8.9",
+    "version": "3.10.7",
     "package_manager": {
       "name": "pip",
       "version": "22.3.1",
@@ -20,16 +20,16 @@
   "packages": {
     "Matrix": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Matrix",
-        "Version": "1.3-4",
-        "Date": "2021-05-24",
+        "Version": "1.4-1",
+        "Date": "2022-03-21",
         "Priority": "recommended",
         "Title": "Sparse and Dense Matrix Classes and Methods",
-        "Contact": "Doug and Martin <Matrix-authors@R-project.org>",
+        "Contact": "Matrix-authors@R-project.org",
         "Maintainer": "Martin Maechler <mmaechler+Matrix@gmail.com>",
-        "Authors@R": "c(person(\"Douglas\",\"Bates\", role=\"aut\")\n , person(\"Martin\",\"Maechler\", role = c(\"aut\",\"cre\"), email=\"mmaechler+Matrix@gmail.com\",\n          comment = c(ORCID = \"0000-0002-8685-9910\"))\n , person(\"Timothy A.\", \"Davis\", role=\"ctb\",\n           comment = c(\"SuiteSparse and 'cs' C libraries, notably CHOLMOD, AMD;\n\t\t       collaborators listed in\n\t\t\tdir(pattern = '^[A-Z]+[.]txt$', full.names=TRUE,\n\t\t\t    system.file('doc', 'SuiteSparse', package='Matrix'))\"))\n , person(\"Jens\", \"Oehlschlägel\", role=\"ctb\", comment=\"initial nearPD()\")\n , person(\"Jason\", \"Riedy\", role=\"ctb\",\n          comment = c(\"condest() and onenormest() for octave\",\n \t  \t      \"Copyright: Regents of the University of California\"))\n , person(\"R Core Team\", role = \"ctb\", comment=\"base R matrix implementation\")\n )",
+        "Authors@R": "c(person(\"Douglas\",\"Bates\", role=\"aut\")\n , person(\"Martin\",\"Maechler\", role = c(\"aut\",\"cre\"), email=\"mmaechler+Matrix@gmail.com\",\n          comment = c(ORCID = \"0000-0002-8685-9910\"))\n , person(\"Mikael\", \"Jagan\", role=\"aut\",\n           comment = \"new 'packedMatrix' class plus subset/diag/.. methods in C\")\n , person(\"Timothy A.\", \"Davis\", role=\"ctb\",\n           comment = c(\"SuiteSparse and 'cs' C libraries, notably CHOLMOD, AMD;\n\t\t       collaborators listed in\n\t\t\tdir(pattern = '^[A-Z]+[.]txt$', full.names=TRUE,\n\t\t\t    system.file('doc', 'SuiteSparse', package='Matrix'))\"))\n , person(\"Jens\", \"Oehlschlägel\", role=\"ctb\", comment=\"initial nearPD()\")\n , person(\"Jason\", \"Riedy\", role=\"ctb\",\n          comment = c(\"condest() and onenormest() for octave\",\n \t  \t      \"Copyright: Regents of the University of California\"))\n , person(\"R Core Team\", role = \"ctb\", comment=\"base R matrix implementation\")\n )",
         "Description": "A rich hierarchy of matrix classes, including triangular,\n   symmetric, and diagonal matrices, both dense and sparse and with\n   pattern, logical and numeric entries.   Numerous methods for and\n   operations on these matrices, using 'LAPACK' and 'SuiteSparse' libraries.",
         "Depends": "R (>= 3.5.0)",
         "Imports": "methods, graphics, grid, stats, utils, lattice",
@@ -41,19 +41,22 @@
         "LazyDataNote": "not possible, since we use data/*.R *and* our classes",
         "BuildResaveData": "no",
         "License": "GPL (>= 2) | file LICENCE",
-        "URL": "http://Matrix.R-forge.R-project.org/",
-        "BugReports": "https://r-forge.r-project.org/tracker/?group_id=61",
-        "NeedsCompilation": "yes",
-        "Packaged": "2021-05-29 14:45:57 UTC; maechler",
-        "Author": "Douglas Bates [aut],\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Timothy A. Davis [ctb] (SuiteSparse and 'cs' C libraries, notably\n    CHOLMOD, AMD; collaborators listed in dir(pattern =\n    '^[A-Z]+[.]txt$', full.names=TRUE, system.file('doc',\n    'SuiteSparse', package='Matrix'))),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  Jason Riedy [ctb] (condest() and onenormest() for octave, Copyright:\n    Regents of the University of California),\n  R Core Team [ctb] (base R matrix implementation)",
+        "URL": "https://Matrix.R-forge.R-project.org/,\nhttps://Matrix.R-forge.R-project.org/doxygen/",
+        "BugReports": "https://R-forge.R-project.org/tracker/?atid=294?group_id=61",
+        "Author": "Douglas Bates [aut],\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Mikael Jagan [aut] (new 'packedMatrix' class plus subset/diag/..\n    methods in C),\n  Timothy A. Davis [ctb] (SuiteSparse and 'cs' C libraries, notably\n    CHOLMOD, AMD; collaborators listed in dir(pattern =\n    '^[A-Z]+[.]txt$', full.names=TRUE, system.file('doc',\n    'SuiteSparse', package='Matrix'))),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  Jason Riedy [ctb] (condest() and onenormest() for octave, Copyright:\n    Regents of the University of California),\n  R Core Team [ctb] (base R matrix implementation)",
         "Repository": "CRAN",
-        "Date/Publication": "2021-06-01 06:10:06 UTC",
-        "Built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-04-30 00:08:29 UTC; unix"
+        "Repository/R-Forge/Project": "matrix",
+        "Repository/R-Forge/Revision": "3446",
+        "Repository/R-Forge/DateTimeStamp": "2022-03-21 17:52:00",
+        "Date/Publication": "2022-03-23 16:30:08 UTC",
+        "NeedsCompilation": "yes",
+        "Packaged": "2022-03-21 18:13:03 UTC; rforge",
+        "Built": "R 4.2.1; x86_64-pc-linux-gnu; 2022-09-09 18:05:19 UTC; unix"
       }
     },
     "R6": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "R6",
         "Title": "Encapsulated Classes with Reference Semantics",
@@ -73,12 +76,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-08-19 14:00:05 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; ; 2021-11-09 00:26:37 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 20:24:04 UTC; unix"
       }
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -99,12 +102,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-07-08 23:10:06 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-07-11 11:11:37 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-07-11 11:11:32 UTC; unix"
       }
     },
     "RcppTOML": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "RcppTOML",
         "Type": "Package",
@@ -127,12 +130,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2020-12-02 23:00:08 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-07-11 15:48:12 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-07-11 15:41:57 UTC; unix"
       }
     },
     "base64enc": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "base64enc",
         "Version": "0.1-3",
@@ -149,12 +152,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2015-07-28 08:03:37",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-05-18 23:23:27 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-07 00:08:07 UTC; unix"
       }
     },
     "bslib": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
@@ -180,12 +183,12 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-02 21:10:10 UTC",
-        "Built": "R 4.1.0; ; 2022-11-03 10:58:09 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-11-03 10:58:09 UTC; unix"
       }
     },
     "cachem": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "cachem",
         "Version": "1.0.6",
@@ -205,12 +208,12 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-08-19 21:30:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-08-20 10:53:56 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:24:34 UTC; unix"
       }
     },
     "digest": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "digest",
         "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx, \n Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,\n Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,\n and Winston Chang.",
@@ -231,12 +234,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-10-18 08:32:35 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-10-19 12:41:24 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-10-19 12:37:53 UTC; unix"
       }
     },
     "evaluate": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "evaluate",
         "Type": "Package",
@@ -258,12 +261,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-07 08:50:05 UTC",
-        "Built": "R 4.1.0; ; 2022-11-08 10:55:42 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-11-08 10:55:28 UTC; unix"
       }
     },
     "fastmap": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fastmap",
         "Title": "Fast Data Structures",
@@ -283,12 +286,12 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-01-25 21:00:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-05-19 00:32:06 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:23:52 UTC; unix"
       }
     },
     "fs": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fs",
         "Title": "Cross-Platform File System Operations Based on 'libuv'",
@@ -314,12 +317,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-12-08 23:00:08 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-12-09 11:24:29 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:24:06 UTC; unix"
       }
     },
     "glue": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
@@ -344,12 +347,12 @@
         "Maintainer": "Jennifer Bryan <jenny@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-02-24 07:50:20 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-02-25 11:36:45 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:23:50 UTC; unix"
       }
     },
     "here": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "here",
         "Title": "A Simpler Way to Find Your Files",
@@ -373,12 +376,12 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "RSPM",
         "Date/Publication": "2020-12-13 07:30:02 UTC",
-        "Built": "R 4.1.0; ; 2021-05-19 01:10:46 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 22:27:01 UTC; unix"
       }
     },
     "highr": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "highr",
         "Type": "Package",
@@ -401,12 +404,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-04-16 21:50:05 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; ; 2021-05-18 23:23:58 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 20:24:29 UTC; unix"
       }
     },
     "htmltools": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "htmltools",
         "Type": "Package",
@@ -431,12 +434,12 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-07-18 08:40:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-07-19 10:55:54 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-07-19 10:55:30 UTC; unix"
       }
     },
     "jquerylib": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jquerylib",
         "Title": "Obtain 'jQuery' as an HTML Dependency Object",
@@ -455,12 +458,12 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-04-26 17:10:02 UTC",
-        "Built": "R 4.1.0; ; 2021-05-19 01:17:36 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 20:24:48 UTC; unix"
       }
     },
     "jsonlite": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jsonlite",
         "Version": "1.8.3",
@@ -481,12 +484,12 @@
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
         "Repository": "RSPM",
         "Date/Publication": "2022-10-21 08:15:07 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-10-24 10:58:39 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-10-24 11:07:46 UTC; unix"
       }
     },
     "knitr": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "knitr",
         "Type": "Package",
@@ -511,12 +514,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-18 12:00:06 UTC",
-        "Built": "R 4.1.0; ; 2022-11-21 11:05:36 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-11-21 11:04:50 UTC; unix"
       }
     },
     "lattice": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lattice",
         "Version": "0.20-45",
@@ -540,12 +543,12 @@
         "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2021-09-22 12:10:02 UTC",
-        "Built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-04-30 00:08:18 UTC; unix"
+        "Built": "R 4.2.1; x86_64-pc-linux-gnu; 2022-09-09 18:05:10 UTC; unix"
       }
     },
     "magrittr": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "magrittr",
@@ -569,12 +572,12 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-03-30 07:30:09 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-03-31 11:03:36 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:24:00 UTC; unix"
       }
     },
     "memoise": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "memoise",
         "Title": "'Memoisation' of Functions",
@@ -594,12 +597,12 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-11-26 16:11:10 UTC",
-        "Built": "R 4.1.0; ; 2021-11-29 11:36:23 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 22:26:50 UTC; unix"
       }
     },
     "png": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "png",
         "Version": "0.1-7",
@@ -616,12 +619,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2013-12-03 22:25:05",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-05-19 00:32:07 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-07 00:07:43 UTC; unix"
       }
     },
     "rappdirs": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "rappdirs",
@@ -644,12 +647,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-01-31 05:40:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-05-18 23:23:46 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-04-22 20:23:56 UTC; unix"
       }
     },
     "reticulate": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "reticulate",
         "Type": "Package",
@@ -674,12 +677,12 @@
         "Maintainer": "Tomasz Kalinowski <tomasz@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-08-31 19:20:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-09-01 10:56:06 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-09-01 10:56:09 UTC; unix"
       }
     },
     "rlang": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rlang",
         "Version": "1.0.6",
@@ -706,12 +709,12 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-09-24 05:40:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-09-26 11:09:41 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-09-26 11:10:56 UTC; unix"
       }
     },
     "rmarkdown": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "rmarkdown",
@@ -736,12 +739,12 @@
         "Author": "JJ Allaire [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Jonathan McPherson [aut],\n  Javier Luraschi [aut],\n  Kevin Ushey [aut],\n  Aron Atkins [aut],\n  Hadley Wickham [aut],\n  Joe Cheng [aut],\n  Winston Chang [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Andrew Dunning [ctb] (<https://orcid.org/0000-0003-0464-5036>),\n  Atsushi Yasumoto [ctb, cph] (<https://orcid.org/0000-0002-8335-495X>,\n    Number sections Lua filter),\n  Barret Schloerke [ctb],\n  Carson Sievert [ctb] (<https://orcid.org/0000-0002-4958-2844>),\n  Christophe Dervieux [ctb],\n  Devon Ryan [ctb] (<https://orcid.org/0000-0002-8549-0971>),\n  Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>),\n  Jeff Allen [ctb],\n  JooYoung Seo [ctb] (<https://orcid.org/0000-0002-4064-6012>),\n  Malcolm Barrett [ctb],\n  Rob Hyndman [ctb],\n  Romain Lesur [ctb],\n  Roy Storey [ctb],\n  Ruben Arslan [ctb],\n  Sergio Oller [ctb],\n  RStudio, PBC [cph],\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/rmd/h/jqueryui-AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  Greg Franko [ctb, cph] (tocify library),\n  John MacFarlane [ctb, cph] (Pandoc templates),\n  Google, Inc. [ctb, cph] (ioslides library),\n  Dave Raggett [ctb] (slidy library),\n  W3C [cph] (slidy library),\n  Dave Gandy [ctb, cph] (Font-Awesome),\n  Ben Sperry [ctb] (Ionicons),\n  Drifty [cph] (Ionicons),\n  Aidan Lister [ctb, cph] (jQuery StickyTabs),\n  Benct Philip Jonsson [ctb, cph] (pagebreak Lua filter),\n  Albert Krewinkel [ctb, cph] (pagebreak Lua filter)",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-09 10:30:05 UTC",
-        "Built": "R 4.1.0; ; 2022-11-10 10:55:43 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-11-10 10:55:52 UTC; unix"
       }
     },
     "rprojroot": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rprojroot",
         "Title": "Finding Files in Project Subdirectories",
@@ -763,16 +766,16 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "RSPM",
         "Date/Publication": "2022-04-02 16:40:02 UTC",
-        "Built": "R 4.1.0; ; 2022-04-04 10:52:26 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 20:24:09 UTC; unix"
       }
     },
     "sass": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "sass",
-        "Version": "0.4.3",
+        "Version": "0.4.4",
         "Title": "Syntactically Awesome Style Sheets ('Sass')",
         "Description": "An 'SCSS' compiler, powered by the 'LibSass' library. With this,\n    R developers can use variables, inheritance, and functions to generate\n    dynamic style sheets. The package uses the 'Sass CSS' extension language,\n    which is stable, powerful, and CSS compatible.",
         "Authors@R": "c(\n    person(\"Joe\", \"Cheng\", , \"joe@rstudio.com\", \"aut\"),\n    person(\"Timothy\", \"Mastny\", , \"tim.mastny@gmail.com\", \"aut\"),\n    person(\"Richard\", \"Iannone\", , \"rich@rstudio.com\", \"aut\",\n       comment = c(ORCID = \"0000-0003-3925-190X\")),\n    person(\"Barret\", \"Schloerke\", , \"barret@rstudio.com\", \"aut\",\n           comment = c(ORCID = \"0000-0001-9986-114X\")),\n    person(\"Carson\", \"Sievert\", , \"carson@rstudio.com\", c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-4958-2844\")),\n    person(\"Christophe\", \"Dervieux\", , \"cderv@rstudio.com\", c(\"ctb\"),\n           comment = c(ORCID = \"0000-0003-4474-2498\")),\n    person(family = \"RStudio\", role = c(\"cph\", \"fnd\")),\n    person(family = \"Sass Open Source Foundation\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Greter\", \"Marcel\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Mifsud\", \"Michael\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Hampton\", \"Catlin\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Natalie\", \"Weizenbaum\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Chris\", \"Eppstein\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Adams\", \"Joseph\", role = c(\"ctb\", \"cph\"),\n           comment = \"json.cpp\"),\n    person(\"Trifunovic\", \"Nemanja\", role = c(\"ctb\", \"cph\"),\n           comment = \"utf8.h\")\n    )",
@@ -787,17 +790,17 @@
         "VignetteBuilder": "knitr",
         "Config/testthat/edition": "3",
         "NeedsCompilation": "yes",
-        "Packaged": "2022-11-17 21:50:31 UTC; cpsievert",
+        "Packaged": "2022-11-22 17:14:51 UTC; cpsievert",
         "Author": "Joe Cheng [aut],\n  Timothy Mastny [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>),\n  RStudio [cph, fnd],\n  Sass Open Source Foundation [ctb, cph] (LibSass library),\n  Greter Marcel [ctb, cph] (LibSass library),\n  Mifsud Michael [ctb, cph] (LibSass library),\n  Hampton Catlin [ctb, cph] (LibSass library),\n  Natalie Weizenbaum [ctb, cph] (LibSass library),\n  Chris Eppstein [ctb, cph] (LibSass library),\n  Adams Joseph [ctb, cph] (json.cpp),\n  Trifunovic Nemanja [ctb, cph] (utf8.h)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
-        "Date/Publication": "2022-11-19 19:40:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-11-21 11:03:57 UTC; unix"
+        "Date/Publication": "2022-11-24 08:50:02 UTC",
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-11-25 10:59:20 UTC; unix"
       }
     },
     "stringi": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringi",
         "Version": "1.7.8",
@@ -820,12 +823,12 @@
         "Packaged": "2022-07-11 01:59:34 UTC; gagolews",
         "Repository": "RSPM",
         "Date/Publication": "2022-07-11 08:10:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-07-12 10:43:04 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-07-12 10:49:21 UTC; unix"
       }
     },
     "stringr": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringr",
         "Title": "Simple, Consistent Wrappers for Common String Operations",
@@ -848,12 +851,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-08-20 22:10:02 UTC",
-        "Built": "R 4.1.0; ; 2022-08-22 11:00:34 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-08-22 10:59:08 UTC; unix"
       }
     },
     "tinytex": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "tinytex",
         "Type": "Package",
@@ -874,12 +877,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2022-09-27 07:20:02 UTC",
-        "Built": "R 4.1.0; ; 2022-09-28 10:57:08 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-09-28 10:57:07 UTC; unix"
       }
     },
     "withr": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "withr",
         "Title": "Run Code 'With' Temporarily Modified Global State",
@@ -904,12 +907,12 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-03-03 21:50:02 UTC",
-        "Built": "R 4.1.0; ; 2022-03-04 10:47:42 UTC; unix"
+        "Built": "R 4.2.0; ; 2022-04-22 20:24:05 UTC; unix"
       }
     },
     "xfun": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "xfun",
         "Type": "Package",
@@ -931,12 +934,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-16 19:20:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-11-17 10:57:07 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-11-17 10:58:00 UTC; unix"
       }
     },
     "yaml": {
       "Source": "CRAN",
-      "Repository": "https://jovial-quail.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
+      "Repository": "https://super-quokka.eval.rstudio.com/packages/cran/__linux__/bionic/latest",
       "description": {
         "Package": "yaml",
         "Type": "Package",
@@ -955,22 +958,22 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-10-18 08:30:02 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-10-19 12:40:04 UTC; unix"
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-10-19 12:37:54 UTC; unix"
       }
     }
   },
   "files": {
     ".Rprofile": {
-      "checksum": "7fe1e6229f602ba6a983b922a62742fa"
+      "checksum": "68b329da9893e34099c7d8ad5cb9c940"
     },
     "requirements.txt": {
-      "checksum": "991d26a22455c65b574524e74844771c"
+      "checksum": "80223d23f26b1100ea2e2830d757caf6"
     },
     "Test1.html": {
-      "checksum": "8c949d2fc0eb1bd6f52d609f6ee54b8c"
+      "checksum": "fff07e627f7c10d36af54835f5d6afbc"
     },
     "Test1.Rmd": {
-      "checksum": "16a7f9cc25cc41eae00262bb7742b7d5"
+      "checksum": "e2510d72e67ea695321ca5cfd47ac52f"
     }
   },
   "users": null
