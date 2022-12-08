@@ -41,3 +41,8 @@ print([(i, i * i) for i in range(100)])
 ```{python}
 print([(i, 2 * i + i) for i in range(30)])
 ```
+
+## Python integration 4
+```{python}
+print([(i, 2 * i + i) for i in range(30)])
+```
